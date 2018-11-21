@@ -99,9 +99,10 @@
 2. Выигранные
 
 То есть сделайте по аналогии с рисунком 9:
-![profile page showing bid-in and won auctions](readme-assets/track-bids.gif)  
-*Figure 9*.  Profile page showing bin-in and won auctions with links to each item.
 
+![profile page showing bid-in and won auctions](readme-assets/track-bids.gif)  
+
+*Рисунок 9*.  Страница профиля с ссылками на отображение товаров, на которые пользователь делал ставки, и на те, которые пользователь выиграл.
 
 
 ## Conclusion
