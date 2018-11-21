@@ -8,7 +8,7 @@ a {
 }
 
 .main-page-blocks {
-  display: flex;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -25,8 +25,9 @@ a {
 }
 
 .user-account-main {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    color: #00A34F;
 
 }
 
@@ -70,7 +71,7 @@ a {
   text-align: center;
 }
 
-.user-sign-up-error {
+.user-sign-in-error {
   display: none;
   color: #ff0000;
 }

@@ -31,11 +31,11 @@ function addMiddlewares(router, role) {
         genid: (req) => {
             return uuid(); // use UUIDs for session IDs
         },
-        store: new FileStore(),
+        // store: new FileStore(),
         secret: 'keyboard cat',
         resave: false,
         saveUninitialized: true,
-        cookie: { maxAge: 10*60*10000 }
+        cookie: { maxAge: 100000*60*10000 }
     }));
     router.use(passport.initialize());
     router.use(passport.session());

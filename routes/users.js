@@ -4,14 +4,10 @@ const bcrypt = require('bcrypt');
 const addMiddlewares = require('../middlewares/add-middlewares');
 const router = express.Router();
 const passport = require('passport');
+const getUserName = require('../helpers/functions');
 
 addMiddlewares(router, models.User);
 const saltRounds = 10;
-
-
-router.get('/', function(req, res) {
-    res.render('index');
-});
 
 router.get('/add', (req,res) => {
     res.render('signup')
@@ -21,8 +17,15 @@ router.get('/enter', function(req, res) {
     res.render('signin');
 });
 
-router.get('/profile', function(req, res) {
-    res.render('profile');
+// get user log out
+router.get('/logout', (req,res)=> {
+    req.logout();
+    res.redirect('/')
+})
+
+router.get('/profile', async (req,res) => {
+    let profileName = await getUserName(req);
+    res.render('profile', {userName: profileName.username})
 });
 
 router.post('/add', async (req, res) => {
@@ -50,7 +53,7 @@ router.post('/enter', (req, res) => {
     addMiddlewares(router, models.User);
     passport.authenticate('local', (err, user) => {
         if (err) {
-            return res.send(400, err);
+            return res.sendStatus(400).send(err);
         }
         req.login(user, (err) => {
             if (err) {
