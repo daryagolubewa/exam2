@@ -15,24 +15,14 @@ a {
 .user-account-style {
   width: 400px;
   margin-bottom: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #00A34F;
   border-radius: 10px;
-}
-
-.user-account-load-file {
-  display: block;
-  height: 50px;
 }
 
 .user-account-main {
     display: flex;
     flex-direction: column;
     color: #00A34F;
-
-}
-
-.user-account-payments {
-  display: none;
 }
 
 .user-application {
@@ -43,45 +33,15 @@ a {
   margin: 0px 0px 10px 0px;
 }
 
-.user-application-request {
-  display: none;
-}
-
 .user-header {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
   width: 300px;
 }
 
-.user-main-profile {
-}
-
-.user-email-confirmation-message {
-  display: none;
-  color: #00000;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 10px;
-  width: 700px;
-  height: 50px;
-  margin-top: 100px;
-  line-height: 25px;
-}
-
-.user-payments-table td {
-  text-align: center;
-}
-
 .user-sign-in-error {
   display: none;
   color: #ff0000;
-}
-
-.user-table {
-  color: #000000;
-}
-
-.user-table-info {
-  display: none;
 }
 
 header {
@@ -91,12 +51,6 @@ header {
 .input-group {
   display: inline-block;
   margin-bottom: 10px;
-}
-
-.jetimg {
-  height: 100px;
-  vertical-align: top;
-  margin: -20px;
 }
 
 .forms {
@@ -142,22 +96,15 @@ header {
   line-height: 24px;
 }
 
-
 .button-appl {
   float: none;
 }
-
-/*.user-login-btn {*/
-/*margin: auto;*/
-/*float: none;*/
-/*}*/
 
 .user-application-btn {
   font-size: 15px;
   float: none;
   margin: 10px 10px 10px 0px;
 }
-
 
 .user-appl {
   align-items: center;
@@ -167,6 +114,24 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.profile-buttons {
+    width: 110px;
+    height: 20px;
+    font-size: 10pt;
+    line-height: 24px;
+}
+
+.button-add-item {
+    width: 150px;
+    height: 25px;
+    font-size: 13pt;
+    line-height: 21px;
+}
+
+.item-add-error {
+    display: none;
 }
 
 

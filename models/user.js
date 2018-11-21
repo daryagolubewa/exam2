@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
     password: DataTypes.STRING
   }, {});
   User.associate = function(models) {
-    User.hasMany(models.Item, { foreignKey: "user_id"})
+    User.hasMany(models.Item, {foreignKey: "user_id"})
   };
 
     User.getEmail = async (email) => {

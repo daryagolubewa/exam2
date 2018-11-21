@@ -7,10 +7,6 @@ const getUserName = require('../helpers/functions');
 
 addMiddlewares(router, models.User);
 
-// router.get('/', function(req, res, next) {
-//     let trueHeader = true
-//     res.render('index', { trueHeader });
-// });
 
 router.get('/', async function(req, res, next) {
     let profileName = await getUserName(req)

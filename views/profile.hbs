@@ -3,8 +3,19 @@
 </head>
 <center>
     <div class="user-account-main">
-        <div class="userr-account-style">
+        <div class="user-account-style">
             <h1>Здравствуйте, {{userName}}</h1>
-
         </div>
+        <div class="user-account-items user-account-style">
+            <h2>Ваши лоты:</h2>
+            {{#if newItem}}
+                    {{itemInfo}}
+            {{else}}
+                <p >Вы ещё ничего не выставили</p>
+            {{/if}}
+        </div>
+        <div class="user-account-add-item-form">
+            <a name="list-btn"  href="/users/list" class="form-buttons">Добавить лот</a>
+        </div>
+    </div>
 </center>
