@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+      <!--<script src="javascripts/.js"></script>-->
+  </head>
+  <body>
+  <header>
+      {{#if trueHeader}}
+          <div class="main-page-blocks">
+            <div class="main-page-blocks-welcome">
+                <h1>Welcome to DBC Auction!</h1>
+            </div>
+              <div class="main-page-blocks-buttons">
+                  <a name="signup_user_btn" href="/users/add" class="form-buttons">Зарегистрироваться</a>
+                  <a name="signin_user_btn" href="/users/enter" class="form-buttons">Войти</a>
+              </div>
+          </div>
+      {{/if}}
+  </header>
+    {{{body}}}
+  </body>
+</html>

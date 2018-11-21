@@ -1,0 +1,189 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.main-page-blocks {
+  display: flex;
+    justify-content: space-between;
+}
+
+.user-account-style {
+  width: 400px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.user-account-load-file {
+  display: block;
+  height: 50px;
+}
+
+.user-account-main {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.user-account-payments {
+  display: none;
+}
+
+.user-application {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  margin: 0px 0px 10px 0px;
+}
+
+.user-application-request {
+  display: none;
+}
+
+.user-header {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  width: 300px;
+}
+
+.user-main-profile {
+}
+
+.user-email-confirmation-message {
+  display: none;
+  color: #00000;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  width: 700px;
+  height: 50px;
+  margin-top: 100px;
+  line-height: 25px;
+}
+
+.user-payments-table td {
+  text-align: center;
+}
+
+.user-sign-up-error {
+  display: none;
+  color: #ff0000;
+}
+
+.user-table {
+  color: #000000;
+}
+
+.user-table-info {
+  display: none;
+}
+
+header {
+  padding-bottom: 30px;
+}
+
+.input-group {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.jetimg {
+  height: 100px;
+  vertical-align: top;
+  margin: -20px;
+}
+
+.forms {
+  display: flex;
+  align-items: center;
+}
+
+.form-buttons {
+  display: inline-block;
+  float: right;
+  vertical-align: top;
+  color: #ffffff;
+  border-color: #00A34F;
+  background-color: #00A34F;
+  font-weight: 400;
+  width: 210px;
+  height: 40px;
+  font-size: 15pt;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 12px;
+  margin: 10px;
+  padding-bottom: 4px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.button-sign {
+  /*margin: 5px 0px 0px 0px;*/
+  line-height: 20px;
+  margin: auto;
+  float: none;
+}
+
+.button-send {
+  display: block;
+}
+.button-enter-profile {
+  width: 100px;
+  height: 20px;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+
+.button-appl {
+  float: none;
+}
+
+/*.user-login-btn {*/
+/*margin: auto;*/
+/*float: none;*/
+/*}*/
+
+.user-application-btn {
+  font-size: 15px;
+  float: none;
+  margin: 10px 10px 10px 0px;
+}
+
+
+.user-appl {
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.form-buttons:hover {
+  border-color: #00CC63;
+  background-color: #00CC63;
+}
+
+#new-user-form {
+  display: block;
+  margin: 0px 0px 10px 0px;
+}
+
+#new-lender-form {
+  display: block;
+  margin: 0px 0px 10px 0px;
+}
+
+#user-application {
+  display: block;
+}
